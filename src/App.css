@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.products .ant-card,
+.favorites .ant-card {
+  position: relative;
+  overflow: hidden;
+}
+.products .ant-card-actions,
+.favorites .ant-card-actions {
+  position: absolute;
+  flex-direction: column;
+  top: 15px;
+  right: -30px;
+  transition: 0.4s;
+  border-radius: 18px !important;
+}
+.products .ant-card:hover .ant-card-actions,
+.favorites .ant-card:hover .ant-card-actions {
+  right: 15px;
+}
+.modal .ingredients,
+.modal .instructions {
+  font-size: 21px;
+  margin: 5px 0;
+}
+.products,
+.favorites {
+  padding: 70px 0;
+}
+.container {
+  width: 1250px;
+  margin: 0 auto;
+}
